@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio of Renad Tharwat, Software Engineering student and UI/UX designer: Figma case studies, mobile UI, and an image compression app.">
+<title>Renad Tharwat | Software Engineer & UI/UX Specialist</title>
+<style>
+:root{
+  --bg:#0b0f17; --card:#131926; --border:#242f4d;
+  --cyan:#38bdf8; --purple:#c084fc;
+  --text:#f8fafc; --sub:#94a3b8; --body:#cbd5e1;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--text);font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;line-height:1.65;padding:0 20px}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:4px}
+
+header{position:sticky;top:0;z-index:10;background:rgba(11,15,23,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);margin:0 -20px;padding:0 20px}
+.bar{max-width:1100px;margin:0 auto;padding:16px 0;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.logo{font-size:1.4rem;font-weight:700;color:var(--cyan);text-decoration:none}
+nav{display:flex;gap:22px;flex-wrap:wrap}
+nav a{color:var(--sub);text-decoration:none;font-weight:500;transition:color .25s}
+nav a:hover{color:var(--purple)}
+
+main{max-width:1100px;margin:0 auto}
+section{padding:56px 0 8px}
+
+.hero{padding-top:72px}
+.hero h1{font-size:clamp(2.2rem,6vw,3.6rem);line-height:1.15;margin-bottom:12px}
+.hero h1 span{color:var(--cyan)}
+.hero h2{font-size:clamp(1.15rem,3vw,1.5rem);color:var(--purple);font-weight:600;margin-bottom:20px}
+.hero p{font-size:1.1rem;color:var(--body);max-width:720px}
+.hero .btn-group{margin-top:28px}
+
+.section-title{font-size:clamp(1.5rem,4vw,2rem);margin-bottom:26px;border-left:4px solid var(--cyan);padding-left:15px}
+
+.grid{display:grid;grid-template-columns:1fr;gap:24px}
+.card{background:var(--card);border:1px solid var(--border);padding:28px;border-radius:12px;transition:transform .25s,border-color .25s}
+.card:hover{transform:translateY(-3px);border-color:var(--cyan)}
+.card h3{color:var(--purple);font-size:1.35rem;margin-bottom:6px}
+.card .sub{color:var(--sub);margin-bottom:14px}
+.card ul{list-style:none;margin-bottom:18px}
+.card li{color:var(--body);margin-bottom:8px;position:relative;padding-left:20px}
+.card li::before{content:"•";position:absolute;left:0;color:var(--cyan);font-size:1.2rem}
+
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.tag{background:rgba(192,132,252,.1);color:var(--purple);padding:4px 12px;border-radius:20px;font-size:.85rem;border:1px solid rgba(192,132,252,.3)}
+
+.btn-group{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;background:rgba(56,189,248,.15);color:var(--cyan);padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:600;border:1px solid var(--cyan);transition:background .25s,color .25s,box-shadow .25s}
+.btn:hover{background:var(--cyan);color:var(--bg);box-shadow:0 0 12px rgba(56,189,248,.4)}
+.btn.solid{background:var(--cyan);color:var(--bg)}
+.btn.solid:hover{box-shadow:0 0 16px rgba(56,189,248,.55)}
+
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.skills h3{color:var(--purple);font-size:1.1rem;margin-bottom:12px}
+.skills .tags{margin-bottom:0}
+
+.edu h3{margin-bottom:2px}
+.edu .when{color:var(--cyan);font-weight:600;margin-bottom:10px}
+
+.contact p{color:var(--body);max-width:640px;margin-bottom:20px}
+
+footer{max-width:1100px;margin:64px auto 0;padding:28px 0;text-align:center;border-top:1px solid var(--border);color:var(--sub);font-size:.9rem}
+
+@media (min-width:900px){
+  .grid.two{grid-template-columns:1fr 1fr}
+}
+@media (max-width:600px){
+  body{padding:0 16px}
+  header{margin:0 -16px;padding:0 16px}
+  .card{padding:22px}
+  nav{gap:16px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <a class="logo" href="#about">Renad Tharwat</a>
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="about">
+    <h1>Hi, I'm <span>Renad Tharwat</span></h1>
+    <h2>Software Engineer & UI/UX Specialist</h2>
+    <p>Software Engineering student and UI/UX designer bridging computer science foundations with human-centered digital products. I build scalable Figma design systems, run UX research, and use Generative AI workflows (such as Google Stitch) to move quickly from idea to interface.</p>
+    <div class="btn-group">
+      <a class="btn solid" href="#projects">View my work</a>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Featured Projects & Case Studies</h2>
+    <div class="grid">
+
+      <article class="card">
+        <h3>🩰 "Grace in Every Move" Ballet Fitness Platform</h3>
+        <p class="sub">Figma UX case study and interactive prototype</p>
+        <div class="tags">
+          <span class="tag">Figma</span><span class="tag">Auto Layout</span><span class="tag">Design Systems</span><span class="tag">User Personas</span>
+        </div>
+        <ul>
+          <li>Designed a UI/UX prototype and web platform centered on ballet fitness training.</li>
+          <li>Developed user personas, empathy maps, color palettes, and onboarding user flows.</li>
+          <li>Structured a scalable design system using Figma Auto Layout and interactive component variants.</li>
+        </ul>
+        <div class="btn-group">
+          <a class="btn" href="https://www.figma.com/design/JazUmJ2UXWcOdkRAHnUC7r/Untitled?node-id=0-1&t=Y8cEKXl0n2TFdEib-1" target="_blank" rel="noopener noreferrer">🎨 Open Figma design file</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>📱 Houses Around the World & UI Components</h3>
+        <p class="sub">Figma mobile UX/UI case study and design system tokens</p>
+        <div class="tags">
+          <span class="tag">Figma</span><span class="tag">Mobile UI</span><span class="tag">Global Filters</span><span class="tag">Component Tokens</span>
+        </div>
+        <ul>
+          <li>Built interactive property listing cards and advanced global search filtering.</li>
+          <li>Developed dark and light mode component variants using Figma Auto Layout tokens.</li>
+          <li>Mapped clean frame-by-frame user journeys for rental discovery.</li>
+        </ul>
+        <div class="btn-group">
+          <a class="btn" href="https://www.figma.com/design/CvoxgeLTVfDot1WFd0JQnk/Untitled?node-id=0-1&t=rnMpiYUxsI1vf8WM-1" target="_blank" rel="noopener noreferrer">🎨 Main Figma canvas</a>
+          <a class="btn" href="https://www.figma.com/design/CvoxgeLTVfDot1WFd0JQnk/Untitled?node-id=192-238&t=rnMpiYUxsI1vf8WM-1" target="_blank" rel="noopener noreferrer">🔍 View frame 1</a>
+          <a class="btn" href="https://www.figma.com/design/CvoxgeLTVfDot1WFd0JQnk/Untitled?node-id=101-633&t=rnMpiYUxsI1vf8WM-1" target="_blank" rel="noopener noreferrer">🔍 View frame 2</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>🖼️ MATLAB Image Processing & Compression GUI</h3>
+        <p class="sub">Academic team project: desktop application for image compression</p>
+        <div class="tags">
+          <span class="tag">MATLAB App Designer</span><span class="tag">Image Compression</span><span class="tag">DCT & Huffman</span>
+        </div>
+        <ul>
+          <li>Built an interactive desktop application using MATLAB App Designer.</li>
+          <li>Implemented Discrete Cosine Transform (DCT), Huffman coding, Run-Length Encoding (RLE), and dithering.</li>
+          <li>Designed visual analysis screens that compare compression metrics and image fidelity.</li>
+        </ul>
+        <div class="btn-group">
+          <a class="btn" href="https://github.com/renadrenadtharwat-eng/matlab-image-compression" target="_blank" rel="noopener noreferrer">💻 View code on GitHub</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>⚽ FitTrack AI Sports & Fitness Mobile App</h3>
+        <p class="sub">Generative AI integration and prompt engineering case study</p>
+        <div class="tags">
+          <span class="tag">Generative AI</span><span class="tag">Google Stitch</span><span class="tag">Prompt Engineering</span>
+        </div>
+        <ul>
+          <li>Used Generative AI and Google Stitch for fast UX ideation and layout generation.</li>
+          <li>Wrote visual prompts in Google Stitch to produce activity tracking dashboards and workout widgets.</li>
+          <li>Created athlete personas and drafted motivational UX microcopy with GenAI tools.</li>
+        </ul>
+        <div class="btn-group">
+          <a class="btn" href="https://docs.google.com/document/d/1l8sgZU9lGAlkKNDEzkDZi1x197t9ng5lPtjvi4ol77Y/edit?usp=sharing" target="_blank" rel="noopener noreferrer">📄 View case study document</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+      <div class="card">
+        <h3>Design</h3>
+        <div class="tags"><span class="tag">Figma</span><span class="tag">Auto Layout</span><span class="tag">Design Systems</span><span class="tag">Prototyping</span><span class="tag">UX Research</span><span class="tag">Personas</span></div>
+      </div>
+      <div class="card">
+        <h3>Engineering</h3>
+        <div class="tags"><span class="tag">MATLAB</span><span class="tag">Algorithms</span><span class="tag">Image Processing</span><span class="tag">HTML & CSS</span></div>
+      </div>
+      <div class="card">
+        <h3>AI workflows</h3>
+        <div class="tags"><span class="tag">Generative AI</span><span class="tag">Google Stitch</span><span class="tag">Prompt Engineering</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2 class="section-title">Education</h2>
+    <article class="card edu">
+      <h3>B.Sc. in Software Engineering</h3>
+      <p class="when">Suez Canal University · Faculty of Computers and Information · 2025 – 2029</p>
+      <p class="sub">Studying software engineering fundamentals alongside UI/UX design, with hands-on projects in image processing and mobile app design.</p>
+    </article>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="section-title">Contact</h2>
+    <p>I'm open to internships, junior roles, and freelance design work. Send me a message and I'll reply as soon as I can.</p>
+    <div class="btn-group">
+      <a class="btn solid" href="mailto:renadrenadtharwat@gmail.com">✉️ Email me</a>
+      <a class="btn" href="https://github.com/renadrenadtharwat-eng" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Renad Tharwat. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
